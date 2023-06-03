@@ -5,7 +5,6 @@ scikit-learn
 scikit-image
 scipy
 opencv
-pytorch
 cmake
 dlib
 black
