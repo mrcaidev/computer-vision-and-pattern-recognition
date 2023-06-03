@@ -29,6 +29,9 @@ def get_tiny_image(image: np.ndarray):
     # Resize the image.
     tiny_image = resize(image, (16, 16))
 
+    # Flatten the image.
+    tiny_image = tiny_image.flatten()
+
     # Normalize the image.
     tiny_image = (tiny_image - np.mean(tiny_image)) / np.std(tiny_image)
 
